@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Pembelian:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editTextKode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotal"
+        android:hint="Kode Barang (SGS/AA5/MP3)"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editTextJumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextKode"
+        android:hint="Jumlah Barang"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextJumlah"
+        android:text="Tambah Barang"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="tambahBarang" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupMembership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTambah"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioButtonGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBiasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biasa" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupMembership"
+        android:text="Checkout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="checkout" />
+
+    <TextView
+        android:id="@+id/textViewBarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/buttonCheckout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
