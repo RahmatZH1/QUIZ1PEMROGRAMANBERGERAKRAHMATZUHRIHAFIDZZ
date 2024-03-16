@@ -6,12 +6,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewQuizRahmat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Quiz 1 Rahmat Zuhri Hafidz:"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:id="@+id/textViewTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Pembelian:"
         android:textSize="18sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true" />
 
     <EditText
